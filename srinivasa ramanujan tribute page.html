@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  background-image: url('https://www.shutterstock.com/image-vector/mathematics-concepts-background-concept-education-260nw-1886561608.jpg');
+  color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 400%;
+  text-align: center;
+}
+body {
+  background-image: url('https://media.tenor.com/b2T06NrnTn0AAAAd/big-brain-meme.gif');
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+ padding: 20px;
+}
+
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+ 
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+ 
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+ 
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+h3{
+ 
+ color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 300%;
+  text-align: center;
+   background-color: black;
+}
+h5{
+color: #F0F8FF;
+  font-family: 'Times New Roman', serif;
+  font-size: 100%;
+ 
+   background-color: black;
+}
+
+</style>
+</head>
+<body>
+<h1>Srinivasa Ramanujan Aiyangar</h1>
+<h3 >The Man of Infinty</h3>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Srinivasa_Ramanujan_-_OPC_-_2_%28cleaned%29.jpg"></img></center>
+<h3 style="font-size:200%;">let's take a look at his journey</h3>
+<h5><ul><li>Srinivasa Ramanujan was a great mathematician of India.</li>
+<li> He had born on 22 December 1887 in Madras during the British Government.</li>
+<li>Srinivasa Ramanujan was a child prodigy as per the information available about him.</li>
+<li> Initially, he was not interested in traditional education. Before attaining the age of 15, he had mastered in various sections of Mathematics.</li>
+<li> He received the K. Ranganatha Rao prize for mathematics in 1904.</li>
+<li>He married to Janakiammal on 14 July 1909.</li>
+<li>During his days in Cambridge, he became close to the great mathematician Hardy</li>
+<li>He wrote many books comprising his theories and formulas</li>
+<li> He met with Hydrocele Testis after getting married and got surgery</li>
+<li>  He completed B.Sc. from Trinity College, Cambridge in 1916.</li>
+<li>His books are compiled of about 3900 equations and identities.</li>
+<li>His books include Wings of Fire (his autobiography), India 2020- A Vision for the New Millenium, Ignited Minds, My Journey, The Luminous Sparks, Children ask Klama etc.</li>
+<li> He had also worked with the Indian Mathematical Society to provide a solution to the math’s problem.</li>
+<li> Ramanujan's lost notebook is the manuscript in which the Indian mathematician Srinivasa Ramanujan recorded the mathematical discoveries of the last year (1919–1920) of his life.</li>
+</ul></h5>
+<h3>Timeline</h3>
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1887</h2>
+      <p> Born In Erode, Tamil Nadu, on December 22</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1903</h2>
+      <p> Passes Matriculation examination from Town High School, Kumbakonam</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1904</h2>
+      <p>Joins Government Arts College, Kumbakonam</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1905</h2>
+      <p>Drops out of Kumbakonam college</p>
+    </div>
+</div>
+  <div class="container left">
+    <div class="content">
+      <h2>1906</h2>
+      <p>Joins Pachaiyappa’s College, Madras, only to leave without completing his studies</p>
+    </div>
+  </div>
+</div>
+  <div class="container right">
+    <div class="content">
+      <h2>1911</h2>
+      <p>Publishes first paper on Bernoulli Numbers</p>
+    </div>
+ </div>
+<div class="container left">
+    <div class="content">
+      <h2>1912</h2>
+      <p>Ramanujan is introduced to G.H. Hardy’s tract on ‘Orders of Infinity.’ He provides an answer to one of the problems posed by Hardy</p>
+    </div>
+ </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1913</h2>
+      <p>Ramanujan writes his first letter to Hardy</p>
+    </div>
+  </div>
+<div class="container left">
+    <div class="content">
+      <h2>1914</h2>
+      <p> University of Madras offers Ramanujan scholarship On March 17, leaves for England</p>
+    </div>
+  </div>
+<div class="container right">
+    <div class="content">
+      <h2>1916</h2>
+      <p> Gets B.A. degree by research from Cambridge University</p>
+    </div>
+  </div>
+<div class="container left">
+    <div class="content">
+      <h2>1917</h2>
+      <p> Periodically hospitalised for treatment</p>
+    </div>
+</div>
+<div class="container right">
+    <div class="content">
+      <h2>1918</h2>
+      <p> Becomes Fellow of the Royal Society elected to Trinity College Fellowship</p>
+    </div>
+  </div>
+<div class="container left">
+    <div class="content">
+      <h2>1919</h2>
+      <p> Returns to India</p>
+    </div>
+</div>
+<div class="container right">
+    <div class="content">
+      <h2>1920</h2>
+      <p> Health deteriorates  ,dies on April 26, 1920</p>
+    </div>
+  </div>
+<div class="container left">
+    <div class="content">
+      <h2>1927</h2>
+      <p> Collected papers of Ramanujan, edited by P.V. Seshu Aiyar, G.H. Hardy and B.M. Wilson and published by Cambridge University Press</p>
+    </div>
+  </div>
+
+<h3 style="font-size:200%;">Achievements of Srinivasa Ramanujan</h3>
+<h5>He was the second Indian to be elected a fellow of the royal Society</h5>
+<h5>The fastest algorithms for calculation of pi are based on his series</h5>
+<h5>The Ramanujan conjecture played a key role in the famous langlands program</h5>
+<h5>He developed the influential circle method in partition number theory </h5>
+<h5>He discovered the three ramanujan’s congruences.</h5>
+<h5>Number 1729 is named hardy–ramanujan number</h5>
+<h5>He did groundbreaking research related to fermat’s last theorem</h5>
+<h5>Ramanujan was the first to discover k3 surfaces in 1910s</h5>
+<h5>His theta function lies at the heart of string theory in physics</h5>
+<h5>His mock modular forms may unlock the secret of black holes</h5>
+
+
+<h3><q>Srinivasa Rao Ramanujan’s  </q>Contribution to Mathematics</h3>
+<pre><h5>Ramanujan’s major contributions to mathematics:
+
+Ramanujan's contribution extends to mathematical fields such as complex analysis, number theory, infinite series, and continued fractions.
+
+Infinite series for pi: In 1914, Ramanujan found a formula for infinite series for pi, which forms the basis of many algorithms used today. Finding an accurate approximation of π (pi) has been one of the most important challenges in the history of mathematics.
+
+Game theory: Ramanujan discovered a long list of new ideas for solving many challenging mathematical problems that have given great impetus to the development of game theory. His contribution to game theory is purely based on intuition and natural talent and is unmatched to this day.
+
+Mock theta function: He elaborated on the mock theta function,  a concept in the field of modular forms of mathematics.
+
+Ramanujan number: 1729 is known as the Ramanujan number which is the sum of the cubes of two numbers 10 and 9.
+
+Circle Method: Ramanujan, along with GH Hardy, invented the circle method which gave the first approximations of the partition of numbers beyond 200. This method contributed significantly to solving the notorious complex problems of the 20th century, such as Waring's conjecture and other additional questions.
+
+Theta Function: Theta function is a special function of several complex variables.</h5></pre>
+</body>
+</html>
+
